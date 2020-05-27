@@ -5,6 +5,7 @@ import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
+import java.util.Iterator;
 
 public class Jsonconnection {
     private String Url;
@@ -67,11 +68,15 @@ public class Jsonconnection {
                 .join();
     }
 
-    public static String ClientDeserialize(String Result){
+    public static String ClientDeserialize(String Result)   {
         JSONObject json = new JSONObject(Result);
         Jsonconnection.rates = json.getJSONObject("rates");
         Jsonconnection.date = json.getString("date");
         Jsonconnection.base = json.getString("base");
-        return Result;
+
+        for(String key : Jsonconnection.rates.keySet())
+            System.out.println(key);
+
+            return Result;
     }
 }
