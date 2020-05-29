@@ -1,5 +1,6 @@
 package exchange.datarib;
 
+import org.json.JSONArray;
 import org.json.JSONObject;
 import java.net.URI;
 import java.net.http.HttpClient;
@@ -74,9 +75,17 @@ public class Jsonconnection {
         Jsonconnection.date = json.getString("date");
         Jsonconnection.base = json.getString("base");
 
-        for(String key : Jsonconnection.rates.keySet())
-            System.out.println(key);
+       // JSONArray songsArray = Jsonconnection.rates.toJSONArray(Jsonconnection.rates.names());
+
+        System.out.println(json);
+
+        //String k = rates.keys().next();
+
+       // System.out.println(k);
 
             return Result;
     }
+
+
 }
+
