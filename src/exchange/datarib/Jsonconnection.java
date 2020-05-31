@@ -75,13 +75,14 @@ public class Jsonconnection {
         Jsonconnection.date = json.getString("date");
         Jsonconnection.base = json.getString("base");
 
-       // JSONArray songsArray = Jsonconnection.rates.toJSONArray(Jsonconnection.rates.names());
+        JSONArray songsArray = Jsonconnection.rates.toJSONArray(Jsonconnection.rates.names());
+        //System.out.println(songsArray);
 
-        System.out.println(json);
+        //System.out.println(json);
 
         //String k = rates.keys().next();
 
-       // System.out.println(k);
+         //System.out.println(k);
 
             return Result;
     }
