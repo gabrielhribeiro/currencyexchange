@@ -7,3 +7,6 @@ This code has some objectives:
 - Get results from JSON cleaning and preparation;
 - Create and Validate tabbles;
 - Insert Values line by line to Postgres SQL. 
+
+
+Recommendation: Execute every day to insert daily currencys.
