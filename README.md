@@ -5,8 +5,8 @@ This code has some objectives:
 - Request API;
 - Deserealization JSON;
 - Get results from JSON cleaning and preparation;
-- Create and Validate tabbles;
-- Insert Values line by line to Postgres SQL. 
+- Create and Validate tables;
+- Insert Values line by line into Postgres SQL. 
 
 
 Recommendation: Execute every day to insert daily currencys.
